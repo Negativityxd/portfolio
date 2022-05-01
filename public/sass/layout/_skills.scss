@@ -1,0 +1,77 @@
+.skills {
+  grid: 3 / 4;
+  background-color: $color-grey;
+
+  display: grid;
+
+  &__container {
+    background-color: $color-grey;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+    width: 30%;
+
+    margin: 4rem 0;
+    border-radius: 2rem;
+    border: 2px solid rgba($color-grey-dark, 0.3);
+
+    box-shadow: 3px 3px 3px 3px rgba(black, 0.3);
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 40%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      height: 80%;
+      width: 70%;
+
+      margin: 0;
+    }
+  }
+
+  &__group {
+    display: grid;
+    place-items: center;
+
+    height: 100%;
+
+    border-right: 1px solid rgba($color-grey-dark, 0.3);
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+
+  &__icon {
+    width: 60%;
+    height: 60%;
+
+    &--next {
+      align-self: flex-start;
+    }
+  }
+
+  &__next {
+    justify-self: center;
+
+    display: grid;
+    place-items: center;
+
+    margin-top: 2rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+}

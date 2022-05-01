@@ -1,0 +1,55 @@
+.footer {
+  grid: 5 / -1;
+  background-color: $color-black;
+  color: rgba($color-grey, 0.8);
+
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+
+  &__initials {
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3rem;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 3rem;
+
+    margin-bottom: 3rem;
+    padding: 4rem 0;
+    border-top: 2px solid rgba($color-grey, 0.8);
+    border-bottom: 2px solid rgba($color-grey, 0.8);
+  }
+
+  &__icon {
+    fill: rgba($color-grey, 0.5);
+    width: 3rem;
+    height: 3rem;
+    box-sizing: initial;
+
+    filter: grayscale(100%);
+
+    transition: all 0.3s;
+
+    &:hover {
+      fill: rgba($color-grey, 0.9);
+      filter: grayscale(0);
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+
+    padding-bottom: 1rem;
+
+    &:last-of-type {
+      padding-bottom: 5rem;
+    }
+  }
+}

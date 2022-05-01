@@ -1,0 +1,22 @@
+.button {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+
+  padding: 2rem;
+
+  transition: all 0.3s;
+
+  &--purple {
+    color: $color-primary;
+
+    border: 2px solid $color-primary;
+    border-radius: 2rem;
+
+    &:hover {
+      color: $color-grey;
+
+      background-color: $color-primary;
+    }
+  }
+}

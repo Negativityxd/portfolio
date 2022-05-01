@@ -1,0 +1,57 @@
+// ANIMATIONS
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(10rem);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-10rem);
+  }
+}
+
+@keyframes fadeinUp {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeinLeft {
+  0% {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes borderFadeIn {
+  100% {
+    border-bottom: 5px double rgba($color-grey, 0.6);
+  }
+}
+
+// CLASSES
+
+.animatedSuFi {
+  animation: 0.5s ease-out fadeIn, 0.5s linear slideUp;
+}
+
+.animatedSrFi {
+  animation: 0.8s linear fadeIn, 0.8s linear slideRight;
+}

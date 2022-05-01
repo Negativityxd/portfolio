@@ -1,0 +1,55 @@
+.portfolio {
+  grid: 4 / 5;
+  background-color: $color-grey;
+  color: $color-grey;
+
+  &__header {
+    background-color: $color-black;
+    color: $color-grey;
+
+    font-size: 4rem;
+    font-weight: 300;
+    text-indent: 5rem;
+
+    padding: 4rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    justify-items: center;
+
+    padding: 6rem 10%;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__btn {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+
+    color: $color-primary;
+
+    padding: 2rem;
+
+    border: 2px solid $color-primary;
+    border-radius: 2rem;
+
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+
+      transform: translateY(0.3rem);
+    }
+  }
+}
+
+.button {
+  grid-column: 1 / -1;
+
+  margin-top: 5rem;
+}

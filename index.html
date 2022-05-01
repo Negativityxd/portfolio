@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="public/css/style.css" />
+
+    <title>Brandon Wong &#124; Web Developer</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__icon">BW</div>
+      <div class="header__main">
+        <div class="header__intro">My name is</div>
+        <h1 class="header__name" id="headerName">Brandon Wong</h1>
+      </div>
+      <div class="header__sub" id="headerSub">
+        I am a Full Stack Web Developer
+      </div>
+      <a href="#contact" class="header__btn">Contact Me</a>
+    </header>
+
+    <section class="about">
+      <div class="about__main hidden">
+        <h2 class="about__header">About Me</h2>
+        <div class="about__text">
+          I am a web developer based out of Fall River, MA. I have a passion for
+          modern, minimalist, designs and creating intuitive solutions to
+          complex problems. I place an emphasis on modular, scalable,
+          architecture, and performant solutions. I enjoy tackling new projects
+          and expanding my horizons and I'm always looking for something new to
+          challenge myself with.
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="skills__container">
+        <div class="skills__group">
+          <svg class="skills__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-html5"></use>
+          </svg>
+          <svg class="skills__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-mongodb"></use>
+          </svg>
+          <svg class="skills__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-git"></use>
+          </svg>
+        </div>
+
+        <div class="skills__group">
+          <svg class="skills__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-css3"></use>
+          </svg>
+          <svg class="skills__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-node-dot-js"></use>
+          </svg>
+          <svg class="skills__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-codepen"></use>
+          </svg>
+        </div>
+
+        <div class="skills__group">
+          <svg class="skills__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-javascript"></use>
+          </svg>
+          <svg class="skills__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-sass"></use>
+          </svg>
+          <svg class="skills__icon">
+            <use
+              xlink:href="./public/img/sprite.svg#icon-visualstudiocode"
+            ></use>
+          </svg>
+        </div>
+      </div>
+      <div class="skills__next">
+        <div class="skills__text">Currently learning:</div>
+        <svg class="skills__icon skills__icon--next">
+          <use xlink:href="./public/img/sprite.svg#icon-react"></use>
+        </svg>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2 class="portfolio__header">
+        <div class="portfolio__header-text">My Portfolio</div>
+      </h2>
+      <div class="portfolio__container">
+        <div class="card">
+          <img
+            src="public/img/portfolio/forkify.png"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__text">
+            A stateful recipe app including AJAX, pagination, and dynamically
+            updated UI
+          </div>
+          <a
+            href="https://forkify-nxd.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card__btn"
+            >Check it out &rsaquo;</a
+          >
+        </div>
+        <div class="card">
+          <img
+            src="public/img/portfolio/natours.png"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__text">
+            Demo landing page with innovative animations and styling techniques
+          </div>
+          <a
+            href="https://natours-nxd.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card__btn"
+            >Check it out &rsaquo;</a
+          >
+        </div>
+        <div class="card">
+          <img src="public/img/portfolio/trillo.png" alt="" class="card__img" />
+          <div class="card__text">
+            Demo landing page using flexbox to create a modern app
+          </div>
+          <a
+            href="https://trillo-nxd.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card__btn"
+            >Check it out &rsaquo;</a
+          >
+        </div>
+        <div class="card">
+          <img src="public/img/portfolio/nexter.png" alt="" class="card__img" />
+          <div class="card__text">
+            Demo landing page using modern CSS techniques
+          </div>
+          <a
+            href="https://nexter-nxd.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card__btn"
+            >Check it out &rsaquo;</a
+          >
+        </div>
+        <div class="card">
+          <img
+            src="public/img/portfolio/yelpCamp.png"
+            alt=""
+            class="card__img"
+          />
+          <div class="card__text">
+            Full-stack app with geolocation and CRUD using MongoDB, Mongoose,
+            and Express.js
+          </div>
+          <a
+            href="https://serene-lake-39305.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card__btn"
+            >Check it out &rsaquo;</a
+          >
+        </div>
+
+        <a
+          href="https://codepen.io/negativityxd"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button button--purple"
+        >
+          Check out my CodePen for modular components I've created
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__initials">BW</div>
+      <div class="footer__contacts" id="contact">
+        <a href="mailto:brandoncpk@gmail.com" class="footer__link">
+          <svg class="footer__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-gmail"></use>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/brandon-wong-2828aa107/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+        >
+          <svg class="footer__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+        <a
+          href="https://codepen.io/negativityxd"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+        >
+          <svg class="footer__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-codepen"></use>
+          </svg>
+        </a>
+        <a
+          href="https://github.com/Negativityxd"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+        >
+          <svg class="footer__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
+        <a
+          href="https://twitter.com/Negativityxd"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+        >
+          <svg class="footer__icon">
+            <use xlink:href="./public/img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__text">Email&#58; Brandoncpk@gmail.com</div>
+      <div class="footer__text">Built from scratch by me!</div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script type="module" src="public/js/index.js"></script>
+  </body>
+</html>

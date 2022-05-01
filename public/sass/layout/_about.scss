@@ -1,0 +1,66 @@
+.about {
+  grid: 2 / 3;
+
+  background-color: $color-grey;
+
+  font-family: "Open Sans", sans-serif;
+
+  clip-path: polygon(25% 0%, 75% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
+
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 25%, 1fr, 25%;
+
+  &__main {
+    grid-column: 2 / 3;
+
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 4rem;
+      width: 70%;
+    }
+  }
+
+  &__header {
+    font-size: 4rem;
+    font-weight: 300;
+    text-indent: 3rem;
+
+    width: 70%;
+    padding-bottom: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 2.5rem;
+
+    border-bottom: 1px solid rgba($color-black, 0.8);
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 4rem;
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-indent: 2.5rem;
+
+    width: 70%;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.4rem;
+    }
+  }
+}
